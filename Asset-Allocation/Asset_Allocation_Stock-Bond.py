@@ -1,5 +1,5 @@
 """
-Two-Sleeve Portfolio Construction Explorer (Stocks + Bonds)
+Asset Allocation (Stock-Bond)
 --------------------------------------------------------------
 An interactive Streamlit app for building a combined stock and bond
 portfolio under three governing controls (risk appetite, liquidity
@@ -21,7 +21,7 @@ import streamlit as st
 import matplotlib.pyplot as plt
 from scipy.optimize import minimize
 
-st.set_page_config(page_title="Stock-Bond Portfolio Allocation", layout="wide")
+st.set_page_config(page_title="Asset Allocation (Stock-Bond)", layout="wide")
 
 RF = 0.02
 STOCK_COLOR = "#2E86AB"
@@ -188,7 +188,7 @@ if method == "Mean-Variance (target return)":
 # Solve and display
 # ---------------------------------------------------------------------------
 
-st.title("Stock and Bond Portfolio Construction Explorer")
+st.title("Asset Allocation (Stock-Bond)")
 st.caption(
     "A two-sleeve universe of 8 stocks and 5 bonds. Risk appetite, liquidity, and sector "
     "diversification set the constraints; the selected method solves the portfolio within them. "
