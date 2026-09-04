@@ -21,7 +21,7 @@ import streamlit as st
 import matplotlib.pyplot as plt
 from scipy.optimize import minimize
 
-st.set_page_config(page_title="Stock & Bond Portfolio Explorer", layout="wide")
+st.set_page_config(page_title="Stock-Bond Portfolio Allocation", layout="wide")
 
 RF = 0.02
 STOCK_COLOR = "#2E86AB"
